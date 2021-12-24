@@ -60,14 +60,15 @@ LETTER SPACING
 }
 html {
   font-size: 62.5%;
-  overflow-x:hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 /****************************
    General Reusable Components 
@@ -96,9 +97,8 @@ body {
 .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
 }
-.grid--footer{
-  grid-template-columns:1.5fr 1.5fr 1fr 1fr 1fr;
-  
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 .grid--center-v {
   align-items: center;
@@ -152,8 +152,8 @@ body {
   transition: all 0.3s;
 
   /* only for btn class */
-  border:none;
-  cursor:pointer;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--full:link,
@@ -185,14 +185,12 @@ body {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  transition:all 0.3s;
+  transition: all 0.3s;
 }
 .link:hover,
 .link:active {
-
-  color:#cf711f;
-  border-bottom:1px solid transparent;
-
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 .list {
@@ -207,7 +205,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  line-height:1.2;
+  line-height: 1.2;
 }
 
 .list-icon {
@@ -219,12 +217,11 @@ body {
 /* ******************************************
         HELPER/SETTINGS CLASSES
 ******************************************* */
-*:focus{
-  outline:none;
+*:focus {
+  outline: none;
   /* outline:4px dotted # */
-  box-shadow: 0 0 0 0.8rem rgba(230,125,34,0.5);
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
-
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
@@ -233,8 +230,8 @@ body {
   margin-bottom: 4.8rem !important;
 }
 
-.center-text{
-text-align:center;
+.center-text {
+  text-align: center;
 }
 strong {
   font-weight: 500;
